@@ -1,3 +1,4 @@
+echo 'DEBUG: This is outside pipeline block'
 pipeline {
     agent any
     environment {
