@@ -6,6 +6,11 @@ pipeline {
         DOCKER_IMAGE_NAME = "nhmanju/train-schedule"
     }
     stages {
+        stage('Debug') {
+    steps {
+        echo "Running on branch: ${env.BRANCH_NAME}"
+    }
+}
         stage('Build') {
             steps {
                 echo 'Running build automation'
